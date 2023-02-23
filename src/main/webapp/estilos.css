@@ -6,7 +6,6 @@ body{
 }
 
 .container{
-    display: flex;
     position: absolute;
     left: 80%;
     top: 25%;
@@ -21,7 +20,7 @@ input {
     height: 60px;
     width: 0;
     padding: 0 20px;
-    color: black;
+    color: red;
     border-radius: 50px;
     font-size: 20px;
     border: 1px solid red;
@@ -30,7 +29,7 @@ input {
 
 ::placeholder{
     display: flex;
-    color: black;
+    color: red;
 }
 
 .btn{
@@ -40,7 +39,7 @@ input {
     top: 0;
     width: 80px;
     height: 80px;
-    background: black;
+    background: red;
     line-height: 80px;
     border-radius: 50%;
     text-align: center;
@@ -76,7 +75,7 @@ input {
 
 a{
     text-decoration: none;
-    color: black;
+    color: red;
 }
 
 header{
@@ -116,16 +115,7 @@ nav a:hover{
 
 }
 
-.estiloola{
-    display: flex;
 
-    position:absolute;
-    left: 50%;
-    top: 22%;
-    height: 50px;
-    transform: translate(-50%,-50%);
-    padding: 10px;
-}
 
 .eslogan1{
 
@@ -248,4 +238,8 @@ input[type="submit"]:hover{
 
 .registrarse a:hover{
     text-decoration: underline;
+}
+
+.textos-header{
+
 }
