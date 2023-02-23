@@ -21,3 +21,7 @@ He creado el formulario de Inicio de sesion
 -22 FEBRERO 2023 Alberto Martinez Perez
 
 He creado nuevas clases como Compra, Contacto y Sobre nosotros
+
+-23 FEBRERO 2023 Alberto Martinez Perez
+
+He creado la clase Contacto de manera simple
