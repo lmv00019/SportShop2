@@ -10,6 +10,8 @@
 <section>Aquí podras encontrar todo tipo de camisetas que se ajusten a tus gustos y deportes.</section>
 
 
+<%=nombre%>
+
 <br/>
 <a href="index.html">volver a la página principal</a>
 

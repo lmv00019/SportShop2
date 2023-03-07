@@ -2,7 +2,8 @@ body{
     font-family: "Arial";
     margin: 10px;
     padding: 0;
-    background: lightskyblue;
+    background: url("back.jpg");
+
 }
 
 header{
@@ -86,6 +87,8 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
 
 
 .logo{
