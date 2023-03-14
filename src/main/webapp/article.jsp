@@ -5,7 +5,7 @@
     <title>SportShop</title>
 </head>
 <body>
-<h1> Camisetas Deporte
+<h1> Camisetas de deporte
 </h1>
 <section>Aquí podras encontrar todo tipo de camisetas que se ajusten a tus gustos y deportes.</section>
 
