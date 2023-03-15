@@ -11,11 +11,12 @@ public class UsuarioDAO {
     public UsuarioDAO() {
         if (usuarios == null) {
             usuarios = new HashMap<>();
-            usuarios.put(1,new Usuario(1,"1234567890",
+            usuarios.put(1,new Usuario(1,"77435696D",
                     "Lorena"));
             usuarios.put(2,new Usuario(2,"1234567891",
                     "Alberto"));
-            usuarios.put(3,new Usuario(3,"1234567892", "Maria"));
+            usuarios.put(3,new Usuario(3,"1234567892",
+                    "Maria"));
         }
     }
     public Usuario buscaDni(String dni) {
