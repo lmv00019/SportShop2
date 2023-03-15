@@ -3,10 +3,12 @@ package es.ujaen.daw.tiendadeporte;
 import es.ujaen.daw.tiendadeporte.Usuario;
 import java.util.List;
 import java.util.Map;
+import java.util.HashMap;
 import java.util.stream.Collectors;
 
+
 @ApplicationScoped
-public class UsuarioDAO {
+class UsuarioDAO {
     private Map<Integer,Usuario> usuarios=null;
     public UsuarioDAO() {
         if (usuarios == null) {
