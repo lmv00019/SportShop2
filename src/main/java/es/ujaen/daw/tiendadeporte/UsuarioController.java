@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-@Named(value = "ctrlUsuarios")
+@Named(value = "ctrlUsuario")
 @ViewScoped
 public class UsuarioController implements Serializable {
     @Inject
