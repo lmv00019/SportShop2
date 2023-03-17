@@ -41,3 +41,32 @@ He creado la clase Contacto de manera simple
 -6 MARZO 2023 Lorena Moreno Vilches
 
 He realizado correctamente el modelo Entidad - Relación
+
+-9 Marzo 2023 Alberto Martínez Perez
+
+he cambiado cosas generales de los fallos
+
+-10 Marzo 2023 Alberto Martínez Perez
+
+Nuevas cosas dentro de los archivos imagenes
+
+-11 Marzo 2023 Alberto Martínez Perez
+
+He comenzado a implenmentar los xhtml
+
+12 Marzo 2023 Alberto Martínez Perez
+
+he dejado algunas cosas por poner en los xhtml
+
+-15 Marzo 2023 Alberto Martínez Perez
+
+he modificado las imagenes y compra.xhtml
+
+-16 Marzo 2023 Alberto Martínez Perez
+
+Cosas hechas como servlet 
+
+-17 Marzo 2023 Alberto Martínez Perez
+
+he modificado las plantillas
+
