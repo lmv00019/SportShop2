@@ -11,7 +11,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
-      xmlns:f="jakarta.faces.core">
+      xmlns:f="jakarta.faces.core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
     <title>SportShop</title>
@@ -55,6 +56,8 @@
         </div>
 
         <a class="volver" href="index.xhtml">volver a la página principal</a>
+
+        <ui:include src="/WEB-INF/templates/footer.xhtml"></ui:include>
     </h:body>
 </f:view>
 </html>
