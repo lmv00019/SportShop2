@@ -46,6 +46,9 @@ He realizado correctamente el modelo Entidad - Relación
 
 he cambiado cosas generales de los fallos
 
+-10 Marzo 2023 Lorena Moreno Vilches
+Migración jsf
+
 -10 Marzo 2023 Alberto Martínez Perez
 
 Nuevas cosas dentro de los archivos imagenes
@@ -62,11 +65,22 @@ he dejado algunas cosas por poner en los xhtml
 
 he modificado las imagenes y compra.xhtml
 
+-15 Marzo 2023 Lorena Moreno Vilches
+
+Fichero index.html
+
 -16 Marzo 2023 Alberto Martínez Perez
 
 Cosas hechas como servlet 
+
+-16 Marzo 2023 Lorena Moreno Vilches
+Clase Usuario
+Clase UsuarioDAO
+Clase UsuarioController
 
 -17 Marzo 2023 Alberto Martínez Perez
 
 he modificado las plantillas
 
+-17 Marzo 2023 Lorena Moreno Vilches
+Implementacion ListadoUsuarios.xhtml
