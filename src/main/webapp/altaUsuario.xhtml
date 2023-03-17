@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Lorena
+  Date: 17/03/2023
+  Time: 15:39
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:pt="jakarta.faces.passthrough">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<f:view>
+    <h:body>
+        <h1>Alta de libro</h1>
+        <h:form>
+            <h:inputText id="isbn" value="#{ctrlLibros.libro.isbn}"
+                         pt:placeholder="ISBN" />
+            <h:inputText id="titulo" value="#{ctrlLibros.libro.titulo}"
+                         pt:placeholder="Titulo" />
+            <h:commandButton action="#{ctrlLibros.crea()}" value="Alta" />
+        </h:form>
+    </h:body>
+</f:view>
+
+</html>
