@@ -18,7 +18,7 @@ class UsuarioDAO {
                     "Lorena"));
             usuarios.put(2,new Usuario(2,"1234567891",
                     "Alberto"));
-            usuarios.put(3,new Usuario(3,"1234567892",
+            usuarios.put(3,new Usuario(3,"1234567893",
                     "Maria"));
         }
     }
