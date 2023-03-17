@@ -22,11 +22,13 @@
     <h:body>
         <h1>Alta de libro</h1>
         <h:form>
-            <h:inputText id="isbn" value="#{ctrlLibros.libro.isbn}"
-                         pt:placeholder="ISBN" />
-            <h:inputText id="titulo" value="#{ctrlLibros.libro.titulo}"
-                         pt:placeholder="Titulo" />
-            <h:commandButton action="#{ctrlLibros.crea()}" value="Alta" />
+            <h:inputText id="id" value="#{ctrlUsuario.usuario.id}"
+                         pt:placeholder="id" />
+            <h:inputText id="dni" value="#{ctrlUsuario.usuario.dni}"
+                         pt:placeholder="dni" />
+            <h:inputText id="nombre" value="#{ctrlUsuario.usuario.nombre}"
+                         pt:placeholder="nombre" />
+            <h:commandButton action="#{ctrlUsuario.usuarios.}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
         </h:form>
     </h:body>
 </f:view>
