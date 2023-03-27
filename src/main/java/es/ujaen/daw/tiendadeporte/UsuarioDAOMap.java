@@ -49,7 +49,7 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
     public boolean guarda(Usuario u) {
         boolean result=false;
         if (usuarios.containsKey(u.getId())) {
-            Usuario nc=new Usuario(u);
+            Usuario nu=new Usuario(u);
             usuarios.replace(u.getId(),nu);
             result=true;
         }
