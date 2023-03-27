@@ -53,6 +53,7 @@ public class Usuario implements Serializable{
         return dni;
     }
 
+
     /**
      * @param dni the dni to set
      */
