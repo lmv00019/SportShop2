@@ -2,8 +2,8 @@
 <!--
   Created by IntelliJ IDEA.
   User: Lorena
-  Date: 17/03/2023
-  Time: 15:39
+  Date: 27/03/2023
+  Time: 16:19
 -->
 <!DOCTYPE html
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -20,7 +20,7 @@
 
 <f:view>
     <h:body>
-        <h1>Alta de usuario</h1>
+        <h1>Baja de usuario</h1>
         <h:form>
             <h:inputText id="id" value="#{ctrlUsuario.usuario.id}"
                          pt:placeholder="id" />
@@ -28,7 +28,7 @@
                          pt:placeholder="dni" required="true" />
             <h:inputText id="nombre" value="#{ctrlUsuario.usuario.nombre}"
                          pt:placeholder="nombre" />
-            <h:commandButton action="#{ctrlUsuario.altaUsuario()}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
+            <h:commandButton action="#{ctrlUsuario.bajaUsuario()}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
         </h:form>
     </h:body>
 </f:view>

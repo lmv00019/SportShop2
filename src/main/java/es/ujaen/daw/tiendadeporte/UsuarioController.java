@@ -34,4 +34,10 @@ public class UsuarioController implements Serializable {
         //todo pasar usuario a DAO(usuario) para dar de alta
         return "/index?faces-redirect=true";
     }
+
+    public String bajaUsuario(){
+        //todo pasar usuario a DAO(usuario) para dar de baja
+
+        return "/index?faces-redirect=true";
+    }
 }
