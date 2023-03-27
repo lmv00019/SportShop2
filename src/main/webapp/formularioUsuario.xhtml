@@ -20,16 +20,16 @@
 
 <f:view>
     <h:body>
-        <form action="procesar_registro.php" method="post">
+        <form action="helloServlet" method="post">
             <div>
             <label for="nombre">Nombre:</label>
-            <input required ="text" id="nombre" name="nombre"/>
+            <input required ="text"  name="nombre" placeholder = "Florencio" />
             </div>
             <label for="dni">DNI:</label>
-            <input required="text" id="dni" name="dni"/>
-            <input type="submit" value="Registrarse"/>
+            <input required="text"  name="dni" placeholder = "25036D" />
+            <button  type="submit">Alta de usuario</button>
+                <a href="listadoUsuarios.xhtml">Listado de usuarios</a>
         </form>
-
     </h:body>
 </f:view>
 </html>
