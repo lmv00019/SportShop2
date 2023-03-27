@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Lorena
+  Date: 27/03/2023
+  Time: 16:50
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core"
+      xmlns:pt="jakarta.faces.passthrough">
+
+<h:head>
+    <title>Formulario usuario</title>
+</h:head>
+
+<f:view>
+    <h:body>
+        <form action="procesar_registro.php" method="post">
+            <div>
+            <label for="nombre">Nombre:</label>
+            <input required ="text" id="nombre" name="nombre"/>
+            </div>
+            <label for="dni">DNI:</label>
+            <input required="text" id="dni" name="dni"/>
+            <input type="submit" value="Registrarse"/>
+        </form>
+
+    </h:body>
+</f:view>
+</html>
