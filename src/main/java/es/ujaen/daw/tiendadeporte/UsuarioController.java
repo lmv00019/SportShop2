@@ -29,4 +29,9 @@ public class UsuarioController implements Serializable {
         this.usuario = usuario;
     }
     public List<Usuario> getUsuarios(){return usuarioDAO.buscaTodos();}
+
+    public String altaUsuario(){
+        //todo pasar usuario a DAO(usuario) para dar de alta
+        return "/index?faces-redirect=true";
+    }
 }

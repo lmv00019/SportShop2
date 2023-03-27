@@ -25,10 +25,10 @@
             <h:inputText id="id" value="#{ctrlUsuario.usuario.id}"
                          pt:placeholder="id" />
             <h:inputText id="dni" value="#{ctrlUsuario.usuario.dni}"
-                         pt:placeholder="dni" />
+                         pt:placeholder="dni" required="true" />
             <h:inputText id="nombre" value="#{ctrlUsuario.usuario.nombre}"
                          pt:placeholder="nombre" />
-            <h:commandButton action="#{ctrlUsuario.usuarios.}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
+            <h:commandButton action="#{ctrlUsuario.altaUsuario()}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
         </h:form>
     </h:body>
 </f:view>
