@@ -12,6 +12,9 @@ public class Usuario implements Serializable{
     private String dni;
     private String nombre;
 
+    //todo cambiar el orden de los atributos, primero nombre y despues dni
+    //todo poner el id autoincremental
+
 
     public Usuario() {
         id = 0;
