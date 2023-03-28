@@ -49,12 +49,12 @@ public class UsuarioController implements Serializable {
         usuario.setId(0);
         usuarioDAO.crea(usuario);
         //Post-Redirect-Get
-        return "/index?faces-redirect=true&id" + usuario.getId();
+        return "/Index2?faces-redirect=true&id" + usuario.getId();
     }
 
     public String guarda() {
         usuarioDAO.guarda(usuario);
-        return "/index?faces-redirect=true&id=" + usuario.getId();
+        return "/Index2?faces-redirect=true&id=" + usuario.getId();
     }
 
     public String borra() {

@@ -20,7 +20,7 @@
         <!-- Other values: Production, SystemTest, UnitTest -->
     </context-param>
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>Index2.xhtml</welcome-file>
     </welcome-file-list>
 
 </web-app>
