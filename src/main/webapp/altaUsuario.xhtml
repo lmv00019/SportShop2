@@ -9,18 +9,17 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns:ui="jakarta.faces.facelets"
       xmlns:h="jakarta.faces.html"
-      xmlns:f="jakarta.faces.core">
+      xmlns:f="jakarta.faces.core"
+      xmlns:p="jakarta.faces.passthrough">
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+    <ui:define name="header">
+        <h1 class="display-4 fw-bolder">Dar de alta un usuario</h1>
+    </ui:define>
 
-    <ui:composition
-        xmlns:h="jakarta.faces.html"
-        xmlns:f="jakarta.faces.core"
-        xmlns:ui="jakarta.faces.facelets"
-        xmlns:p="jakarta.faces.passthrough">
-
-        <ui:define name="content">
-            <h1>Alta Usuario</h1>
+        <ui:define name="contenido">
+            <br></br>
             <h:form styleClass="well" >
                 <label>Nombre:</label> <h:inputText styleClass="form-control" label="Nombre" id="idNombre"
                                                     value="#{ctrlUsuario.usuario.nombre}" required="true">
@@ -31,8 +30,11 @@
                                                  value="#{ctrlUsuario.usuario.dni}" required="true">
                 <!--f:validateRegex pattern="\d{7,8}-?[a-zA-Z]" /-->
             </h:inputText>
+                <br></br>
                 <h:commandButton styleClass="btn btn-primary" value="Guardar" action="#{ctrlUsuario.crea}"/>
                 <h:button styleClass="btn btn-default" value="Cancelar" outcome="listadoUsuarios" />
             </h:form>
+            <br></br>
         </ui:define>
-    </ui:composition>
+</ui:composition>
+</html>
