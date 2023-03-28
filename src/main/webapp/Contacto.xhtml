@@ -5,28 +5,14 @@
   Date: 15/03/2023
   Time: 12:04
 -->
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:ui="jakarta.faces.facelets"
+      xmlns:h="jakarta.faces.html">
+<ui:composition template="/WEB-INF/templates/layout.xhtml">
+    <ui:define name="header">
+        <h1 class="display-4 fw-bolder">Contacto</h1>
+    </ui:define>
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="jakarta.faces.html"
-      xmlns:f="jakarta.faces.core">
-
-<h:head>
-    <title>SportShop</title>
-    <link rel="shortcut icon" href="imagenes/iconopagina.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/estilos.css"/>
-</h:head>
-<f:view>
-<h:body>
-    <header>
-        <a href="#" class="logo">
-            <img src="imagenes/iconopagina.png" alt="logo de la compañia"/>
-            <h2 class="nombre-empresa">SportShop</h2>
-        </a>
-
-    </header>
+    <ui:define name="contenido">
 
     <section>
         <h1>Podrás contactarnos mediante los siguientes métodos</h1>
@@ -43,9 +29,6 @@
         </div>
     </section>
     <br/>
-
-    <a href="index.xhtml">Volver</a>
-</h:body>
-</f:view>
-
+    </ui:define>
+</ui:composition>
 </html>
