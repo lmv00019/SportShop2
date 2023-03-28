@@ -11,26 +11,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
-      xmlns:f="jakarta.faces.core"
-      xmlns:pt="jakarta.faces.passthrough">
+      xmlns:f="jakarta.faces.core">
 
-<h:head>
-    <title>Title</title>
-</h:head>
+    <ui:composition
+        xmlns:h="jakarta.faces.html"
+        xmlns:f="jakarta.faces.core"
+        xmlns:ui="jakarta.faces.facelets"
+        xmlns:p="jakarta.faces.passthrough">
 
-<f:view>
-    <h:body>
-        <h1>Alta de usuario</h1>
-        <h:form>
-            <h:inputText id="id" value="#{ctrlUsuario.usuario.id}"
-                         pt:placeholder="id" />
-            <h:inputText id="dni" value="#{ctrlUsuario.usuario.dni}"
-                         pt:placeholder="dni" required="true" />
-            <h:inputText id="nombre" value="#{ctrlUsuario.usuario.nombre}"
-                         pt:placeholder="nombre" />
-            <h:commandButton action="#{ctrlUsuario.altaUsuario()}" value="Inicio Sesion" styleClass="btn btn-primary" role="button"/>
-        </h:form>
-    </h:body>
-</f:view>
-
-</html>
+        <ui:define name="content">
+            <h1>Alta Usuario</h1>
+            <h:form styleClass="well" >
+                <label>Nombre:</label> <h:inputText styleClass="form-control" label="Nombre" id="idNombre"
+                                                    value="#{ctrlUsuario.usuario.nombre}" required="true">
+                <!--f:validateLength minimum="4" maximum="25"/-->
+            </h:inputText>
+                <p><h:message styleClass="form-text text-danger" for="idNombre"  /></p>
+                <label>DNI:</label> <h:inputText styleClass="form-control" label="DNI" id="idDNI"
+                                                 value="#{ctrlUsuario.usuario.dni}" required="true">
+                <!--f:validateRegex pattern="\d{7,8}-?[a-zA-Z]" /-->
+            </h:inputText>
+                <h:commandButton styleClass="btn btn-primary" value="Guardar" action="#{ctrlUsuario.crea}"/>
+                <h:button styleClass="btn btn-default" value="Cancelar" outcome="listadoUsuarios" />
+            </h:form>
+        </ui:define>
+    </ui:composition>

@@ -17,7 +17,7 @@ import jakarta.transaction.Transactional;
 
 /**
  *
- * @author jrbalsas
+ * @author Alberto Martínez y Lorena Moreno
  */
 @RequestScoped  //Elegible for Dependency Injection
 @DAOJpa
@@ -26,7 +26,7 @@ public class UsuarioDAOJPA implements UsuarioDAO, Serializable {
 
     private final Logger logger = Logger.getLogger(UsuarioDAOJPA.class.getName());
 
-    @PersistenceContext(unitName = "ClubPU") //Only for JEE full application servers
+    @PersistenceContext(unitName = "tiendaDep") //Only for JEE full application servers
     //Requires to enable Persistence-unit in persistence.xml
     private EntityManager em;
 
