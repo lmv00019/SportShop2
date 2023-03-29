@@ -29,7 +29,8 @@ public class Usuario implements Serializable {
 
     public Usuario() {
         id = 0;
-        nombre = "Desconocido";
+        nombre = "";
+        dni="";
 
     }
 
