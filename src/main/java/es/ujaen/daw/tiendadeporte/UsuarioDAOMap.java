@@ -12,7 +12,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 @DAOMap
 public class UsuarioDAOMap implements UsuarioDAO, Serializable{
 
-    private  Map<Integer, Usuario> usuarios;
+    private static Map<Integer, Usuario> usuarios;
     private  Integer idUsuario = 1;
 
     public UsuarioDAOMap() {
@@ -24,7 +24,7 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
     }
 
     @Override
-    public static Usuario buscaId(Integer id) {
+    public Usuario buscaId(Integer id) {
         Usuario localizado = usuarios.get(id);
         if (localizado != null) localizado= new Usuario(localizado);
         return localizado;
