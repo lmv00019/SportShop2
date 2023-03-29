@@ -24,7 +24,7 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
     }
 
     @Override
-    public Usuario buscaId(Integer id) {
+    public static Usuario buscaId(Integer id) {
         Usuario localizado = usuarios.get(id);
         if (localizado != null) localizado= new Usuario(localizado);
         return localizado;

@@ -67,13 +67,12 @@ public class UsuarioController implements Serializable {
         return "listadoUsuarios";
     }
 
-    public String Edita(Usuario usuario) {
-        usuario.setId(0);
-        usuarioDAO.crea(usuario);
+    /*public String modifica(Integer id, String nombre, String dni) {
+        Usuario u;
+        //u = UsuarioDAOMap.buscaId(id);
+        u.setNombre(nombre);
+        u.setDni(dni);
         //Post-Redirect-Get
-        return "/Index2?faces-redirect=true&id" + usuario.getId();
-    }
-
-
-
+        return "/Index2?faces-redirect=true&id" + u.getId();
+    }*/
 }
