@@ -1,86 +1,48 @@
--14 FEBRERO 2023  Lorena Moreno Vilches
+ITERACIÓN INICIAL: 7 febrero 2023 - 24 febrero 2023
 
-He hecho el storyboard
+- Storyboard
+- Inicialización del proyecto
+- Introducción de clases y modificación del index.html
+- Diagrama
+- Estructura del index.html
+- Estilos de css para dar forma al formato
+- Implementación de enlaces a las siguientes interacciones como inicio de sesión
+- Creación del formulario de Inicio de sesión
+- Creación de las clases Compra, Contacto y Sobre nosotros
+- Documentación de la iteración inicial del proyecto
+- Creación de la clase contacto
+- Corrección del modelo Entidad - Relación
+- Solución de pequeños errores
 
--14 FEBRERO 2023  Alberto Martinez Perez
 
-He inicializado la practica
 
--15 FEBRERO 2023 Alberto Martinez Perez
 
-He empezado a introducir las clases e ir modificando el index.html
+ITERACIÓN 1: 7 febrero 2023 - 17 marzo 2023
 
--15 FEBRERO 2023 Lorena Moreno Vilches
+- Migración jsf
+- Nuevas funcionalidades en imagenes añadidas
+- Implementación de las clases xhtml
+- Modificaciones iniciales sobre los archivos xhtml
+- Modificación de imagenes y compra.xhtml
+- Implementación de diversas clases: Usuario, UsuarioDAO, UsuarioController
+- Modificación de plantillas
+- Implementación ListadoUsuarios.xhtml
 
-He hecho el diagrama
 
--16 FEBRERO 2023 Alberto Martinez Perez
 
-He puesto la estructura del index.html y he metido la clase de estilos de css para darle forma al formato
 
--18 FEBRERO 2023 Alberto Martinez Perez
 
-Le he dado color y he metido los primeros enlaces a las siguientes interacciones como inicio de sesion
+ITERACIÓN 2: 17 marzo 2023 - 31 marzo 2023
 
--19 FEBRERO 2023 Alberto Martinez Perez
-
-He creado el formulario de Inicio de sesion
-
--22 FEBRERO 2023 Alberto Martinez Perez
-
-He creado nuevas clases como Compra, Contacto y Sobre nosotros
-
--22 FEBRERO 2023 Lorena Moreno Vilches
-
-He elaborado la documentación de la iteración inicial del proyecto
-
--23 FEBRERO 2023 Alberto Martinez Perez
-
-He creado la clase Contacto de manera simple
-
--6 MARZO 2023 Lorena Moreno Vilches
-
-He realizado correctamente el modelo Entidad - Relación
-
--9 Marzo 2023 Alberto Martínez Perez
-
-he cambiado cosas generales de los fallos
-
--10 Marzo 2023 Lorena Moreno Vilches
-Migración jsf
-
--10 Marzo 2023 Alberto Martínez Perez
-
-Nuevas cosas dentro de los archivos imagenes
-
--11 Marzo 2023 Alberto Martínez Perez
-
-He comenzado a implenmentar los xhtml
-
-12 Marzo 2023 Alberto Martínez Perez
-
-he dejado algunas cosas por poner en los xhtml
-
--15 Marzo 2023 Alberto Martínez Perez
-
-he modificado las imagenes y compra.xhtml
-
--15 Marzo 2023 Lorena Moreno Vilches
-
-Fichero index.html
-
--16 Marzo 2023 Alberto Martínez Perez
-
-Cosas hechas como servlet 
-
--16 Marzo 2023 Lorena Moreno Vilches
-Clase Usuario
-Clase UsuarioDAO
-Clase UsuarioController
-
--17 Marzo 2023 Alberto Martínez Perez
-
-he modificado las plantillas
-
--17 Marzo 2023 Lorena Moreno Vilches
-Implementacion ListadoUsuarios.xhtml
+- Introducción icono imagen de usuario en el header
+- Implementación de un formulario para registrar datos de un usuario
+- Implementación de las siguientes funcionalidades:
+  -> Dar de alta a un usuario
+  -> Dar de baja a un usuario
+  -> Modificar los datos de un usuario
+- Implementación de las siguientes clases: GenericDAO, UsuarioDAOMap, UsuarioDAOJpa, DAOMap, DAOJpa
+- Modificación UuarioController y Usuario para adaptarnos a las anteriores
+- Implementación correcta del template layout y funcionando en todas las vistas
+- Arreglo para mostrar los usuarios dados de alta en la vista listadoUsuarios
+- Arreglo enlaces para la utilización de funcionalidades jsf 
+ 
