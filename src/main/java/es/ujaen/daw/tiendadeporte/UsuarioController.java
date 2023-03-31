@@ -20,7 +20,7 @@ import jakarta.inject.Named;
 public class UsuarioController implements Serializable {
     private static final long serialVersionUID = 1L;
     private final Logger logger = Logger.getLogger(UsuarioController.class.getName());
-    @Inject  @DAOJpa
+    @Inject  @DAOMap
     private UsuarioDAO usuarioDAO;
     @Inject
     FacesContext fc;
