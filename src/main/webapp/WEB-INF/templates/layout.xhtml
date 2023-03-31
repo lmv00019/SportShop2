@@ -5,9 +5,7 @@
   Date: 17/03/2023
   Time: 12:00
 -->
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
@@ -30,18 +28,18 @@
 <h:body>
     <header class="header-principal">
         <a href="Index2.xhtml" class="logo">
-            <img src="imagenes/iconopagina.png" alt="logo de la compañia"/>
+            <h:graphicImage library="imagenes" name="iconopagina.png"  alt="logo de la compañia"/>
         </a>
         <h1 class="display-4 fw-bolder">SportShop</h1>
         <nav>
             <div>
-                <img src="imagenes/usuario.png" height="50" width="50"/>
+                <h:graphicImage library="imagenes" name="usuario.png" height="50" width="50"/>
             </div>
             <br></br>
             <div>
-                <a href="InicioSesion.xhtml" class="iniciar">Inicio Sesion</a>
-                <a href="SobreNosotros.xhtml" class="Sobre">Sobre Nosotros</a>
-                <a href="Contacto.xhtml" class="iniciar">Contacto</a>
+                <h:link outcome="/InicioSesion" class="iniciar">Inicio Sesion</h:link>
+                <h:link outcome="/SobreNosotros" class="iniciar">Sobre Nosotros</h:link>
+                <h:link outcome="/Contacto" class="iniciar">Contacto</h:link>
             </div>
         </nav>
 
@@ -63,13 +61,13 @@
 
     <!-- Navigation-->
     <footer class="py-5 bg-dark">
-        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; SportShop.com 2023</p></div>
+        <div class="container"><p class="m-0 text-center text-white">Copyright; SportShop.com 2023</p></div>
         <br></br>
-        <div class="container"><p class="m-0 text-center text-white"><img src="imagenes/iconos.jpg" height="50" width="250"/></p></div>
+        <div class="container"><p class="m-0 text-center text-white"><h:graphicImage library="imagenes" name="iconos.jpg"  height="50" width="250"/></p></div>
         <br></br>
         <div>
             <br/>
-            <div class="container"><p class="m-0 text-center text-white"><a href="Contacto.xhtml" style="color: white" >Más información</a></p></div>
+            <div class="container"><p class="m-0 text-center text-white"><h:link outcome="Contacto"  style="color: white" >Más información</h:link></p></div>
         </div>
     </footer>
 </h:body>
