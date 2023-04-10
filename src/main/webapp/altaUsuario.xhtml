@@ -31,6 +31,7 @@
                                                  value="#{ctrlUsuario.usuario.dni}" required="true">
                 <!--f:validateRegex pattern="\d{7,8}-?[a-zA-Z]" /-->
             </h:inputText>
+                <p><h:message styleClass="form-text text-danger" for="idDNI"  /></p>
                 <br></br>
                 <h:commandButton styleClass="btn btn-primary" value="Guardar" action="#{ctrlUsuario.crea()}" outcome="listadoUsuarios"/>
 

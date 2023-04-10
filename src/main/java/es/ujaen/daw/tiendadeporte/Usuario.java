@@ -21,7 +21,7 @@ public class Usuario implements Serializable {
 
     @Size(min = 4, max = 25, message = "La longitud ${validatedValue} debe estar entre {min} y {max} caracteres")
     private String nombre;
-    @Pattern(regexp = "\\d{7,8}(-?[a-zA-Z])?", message = "{Usuario.dni.formato}")
+    @Pattern(regexp = "\\d{7,8}(-?[a-zA-Z])?", message = "El D.N.I debe tener 9 digitos y unaa letra en mayus o minus")
     private String dni;
 
 
