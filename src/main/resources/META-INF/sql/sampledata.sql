@@ -1,0 +1,1 @@
+insert into USUARIO (id,nombre,dni) values (15,'fernando estasion fren','25643789G')
