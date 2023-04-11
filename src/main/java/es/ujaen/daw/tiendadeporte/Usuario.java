@@ -11,12 +11,12 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-@Entity()       //JPA annotations
+@Entity      //JPA annotations
 //@Table(name="Usuario")
 public class Usuario implements Serializable {
 
     @Id         //JPA annotations
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Auto-incremental
+    //@GeneratedValue(strategy = GenerationType.IDENTITY) //Auto-incremental
     private Integer id;
 
     @Size(min = 4, max = 25, message = "La longitud ${validatedValue} debe estar entre {min} y {max} caracteres")

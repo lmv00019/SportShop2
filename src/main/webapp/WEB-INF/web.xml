@@ -24,7 +24,7 @@
     </welcome-file-list>
 
     <data-source>
-        <name>java:global/jdbc/usuariosBD</name> <!-- JNDI resource -->
+        <name>java:global/jdbc/dawDeporte</name> <!-- JNDI resource -->
         <class-name>org.h2.jdbcx.JdbcDataSource</class-name> <!-- Driver -->
         <url>jdbc:h2:~/h2db/dawDeporte;AUTO_SERVER=TRUE</url> <!--DB in user folder -->
         <user>dawuser</user>
