@@ -1,7 +1,7 @@
 package es.ujaen.daw.tiendadeporte;
 
-import es.ujaen.daw.tiendadeporte.Usuario;
-import es.ujaen.daw.tiendadeporte.UsuarioDAO;
+import es.ujaen.daw.tiendadeporte.Articulo;
+import es.ujaen.daw.tiendadeporte.ArticuloDAO;
 import es.ujaen.daw.tiendadeporte.DAOJpa;
 import es.ujaen.daw.tiendadeporte.DAOMap;
 import java.io.Serializable;
@@ -21,7 +21,7 @@ public class ArticuloController implements Serializable {
     @Inject Preferencias preferencias;
     private static final long serialVersionUID = 1L;
     private final Logger logger = Logger.getLogger(ArticuloController.class.getName());
-    @Inject  @DAOJpa
+   // @Inject  @DAOMap
     private ArticuloDAO articuloDAO;
     @Inject
     FacesContext fc;
