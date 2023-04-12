@@ -43,5 +43,23 @@
         <tracking-mode>COOKIE</tracking-mode> <!-- desactiva id de sesión en urls -->
     </session-config>
 
+    <security-role>
+        <role-name>USUARIOS</role-name>
+    </security-role>
+    <security-role>
+        <role-name>ADMINISTRADORES</role-name>
+    </security-role>
+    <!-- Reglas de control de acceso: security-constraint, puede haber varias -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Usuarios identificados</web-resource-name>
+            <url-pattern>/*</url-pattern>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>USUARIOS</role-name>
+            <role-name>ADMINISTRADORES</role-name>
+        </auth-constraint>
+    </security-constraint>
 
 </web-app>
