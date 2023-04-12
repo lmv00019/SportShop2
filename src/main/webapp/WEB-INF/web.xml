@@ -34,5 +34,14 @@
         <min-pool-size>5</min-pool-size>
     </data-source>
 
+    <session-config>
+        <session-timeout> 30 </session-timeout> <!-- tiempo de inactividad -->
+        <cookie-config>
+            <http-only>true</http-only> <!-- evita acceso desde javascript -->
+            <secure>false</secure> <!-- true para forzar enviar por conexión segura TLS-->
+        </cookie-config>
+        <tracking-mode>COOKIE</tracking-mode> <!-- desactiva id de sesión en urls -->
+    </session-config>
+
 
 </web-app>
