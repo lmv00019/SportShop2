@@ -18,6 +18,7 @@ import jakarta.inject.Named;
 @Named(value = "ctrlArticulo")
 @ViewScoped
 public class ArticuloController implements Serializable {
+    @Inject Preferencias preferencias;
     private static final long serialVersionUID = 1L;
     private final Logger logger = Logger.getLogger(ArticuloController.class.getName());
     @Inject  @DAOJpa
@@ -40,9 +41,14 @@ public class ArticuloController implements Serializable {
 
     public void recupera() {
         articulo = articuloDAO.buscaId(articulo.getId());
+        preferencias.setUltimoArticulo(articulo.getNombre());
         if (articulo == null) {
             fc.addMessage(null, new FacesMessage("El articulo indicado no existe"));
         }
+    }
+
+    public void recupera(Integer id) {
+        preferencias.setUltimoArticulo(articulo.getNombre());
     }
 
     public String crea() {
