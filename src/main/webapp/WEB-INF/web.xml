@@ -34,6 +34,17 @@
         <min-pool-size>5</min-pool-size>
     </data-source>
 
+    <data-source>
+        <name>java:global/jdbc/dawArticulos</name> <!-- JNDI resource -->
+        <class-name>org.h2.jdbcx.JdbcDataSource</class-name> <!-- Driver -->
+        <url>jdbc:h2:~/h2db/dawArticulos;AUTO_SERVER=TRUE</url> <!--DB in user folder -->
+        <user>dawuser</user>
+        <password>dawuser</password>
+        <initial-pool-size>2</initial-pool-size>
+        <max-pool-size>10</max-pool-size>
+        <min-pool-size>5</min-pool-size>
+    </data-source>
+
     <session-config>
         <session-timeout> 30 </session-timeout> <!-- tiempo de inactividad -->
         <cookie-config>
