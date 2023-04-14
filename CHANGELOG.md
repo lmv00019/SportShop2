@@ -45,4 +45,20 @@ ITERACIÓN 2: 17 marzo 2023 - 31 marzo 2023
 - Implementación correcta del template layout y funcionando en todas las vistas
 - Arreglo para mostrar los usuarios dados de alta en la vista listadoUsuarios
 - Arreglo enlaces para la utilización de funcionalidades jsf 
+
+ITERACIÓN 3: 10 abril 2023 - 14 abril 2023
+
+Alberto:
+- Validacion de datos
+- Conexion a la base de datos
+- Insecion de datos de prueba para la base de datos
+- imlementacion roles usuario y administrador
+- controlador de articulos
+- 
+Lorena:
+- configuracion de las entidades JPA
+- unidad de persistencia
+- acceso a informacion en el contexto de sesion
+- autentificacion mediante formulario
+- clases articulos
  
