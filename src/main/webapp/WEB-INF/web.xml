@@ -55,7 +55,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Usuarios identificados</web-resource-name>
-            <url-pattern>/administrador/altaUsuario.xhtml</url-pattern>
+            <url-pattern>/administrador/*</url-pattern>
 
         </web-resource-collection>
         <auth-constraint>
