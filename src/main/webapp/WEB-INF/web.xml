@@ -55,12 +55,11 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Usuarios identificados</web-resource-name>
-            <url-pattern>/altaUsuario.xhtml</url-pattern>
-            <url-pattern>/bajaUsuario.xhtml</url-pattern>
-            <url-pattern>/listadoUsuarios.xhtml</url-pattern>
+            <url-pattern>/administrador/altaUsuario.xhtml</url-pattern>
+
         </web-resource-collection>
         <auth-constraint>
-            <role-name>USUARIOS</role-name>
+
             <role-name>ADMINISTRADORES</role-name>
         </auth-constraint>
     </security-constraint>
