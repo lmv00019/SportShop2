@@ -23,7 +23,7 @@ import jakarta.security.enterprise.authentication.mechanism.http.LoginToContinue
         )
 )
 
-@BasicAuthenticationMechanismDefinition( realmName = "Catálogo de articulos" )
+//@BasicAuthenticationMechanismDefinition( realmName = "Catálogo de articulos" )
 @ApplicationScoped
 @FacesConfig
 public class AppConfig {

@@ -34,16 +34,7 @@
         <min-pool-size>5</min-pool-size>
     </data-source>
 
-    <data-source>
-        <name>java:global/jdbc/dawArticulos</name> <!-- JNDI resource -->
-        <class-name>org.h2.jdbcx.JdbcDataSource</class-name> <!-- Driver -->
-        <url>jdbc:h2:~/h2db/dawArticulos;AUTO_SERVER=TRUE</url> <!--DB in user folder -->
-        <user>dawuser</user>
-        <password>dawuser</password>
-        <initial-pool-size>2</initial-pool-size>
-        <max-pool-size>10</max-pool-size>
-        <min-pool-size>5</min-pool-size>
-    </data-source>
+
 
     <session-config>
         <session-timeout> 30 </session-timeout> <!-- tiempo de inactividad -->
@@ -64,9 +55,9 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Usuarios identificados</web-resource-name>
-            <url-pattern>/altaUsuario*</url-pattern>
-            <url-pattern>/bajaUsuario*</url-pattern>
-            <url-pattern>/listadoUsuarios*</url-pattern>
+            <url-pattern>/altaUsuario.xhtml</url-pattern>
+            <url-pattern>/bajaUsuario.xhtml</url-pattern>
+            <url-pattern>/listadoUsuarios.xhtml</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>USUARIOS</role-name>

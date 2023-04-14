@@ -22,7 +22,8 @@
     <link rel="shortcut icon" href="imagenes/iconopagina.png" type="image/x-icon"/>        <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <h:outputStylesheet name="styles.css" library="css"/>
 </h:head>
 
 <h:body>
@@ -37,7 +38,7 @@
             </div>
             <br></br>
             <div>
-                <h:link outcome="/login" class="iniciar">Inicio Sesion</h:link>
+                <h:link outcome="/listadoUsuarios" class="iniciar">Inicio Sesion</h:link>
                 <h:link outcome="/SobreNosotros" class="iniciar">Sobre Nosotros</h:link>
                 <h:link outcome="/Contacto" class="iniciar">Contacto</h:link>
             </div>
