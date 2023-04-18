@@ -16,6 +16,31 @@
 
     <ui:define name="contenido">
 
+        <div class="formulario">
+            <h1>Identificacion de usuario</h1>
+            <c:if test="#{param.error!=null}">
+                <p class="alert alert-danger">Error de autenticación</p>
+            </c:if>
+            <form action="j_security_check" method="POST">
+                <div class="username">
+                    <input type ="text" name="j_username"/>
+                    <label>Usuario</label>
+                </div>
+                <div class="username">
+                    <input type="password" name="j_password"/>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordar">¿He olvidado mi contraseña?</div>
+                <input type="submit" value="Iniciar"/>
+                <div class="registrarse">
+                    Quiero hacer el <a href="#">registro</a>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!--
         <h2>Identificación de usuario </h2>
         <c:if test="#{param.error!=null}">
             <p class="alert alert-danger">Error de autenticación</p>
@@ -26,6 +51,7 @@
             <input type="submit" value="Acceder"/>
         </form>
         <br/>
+        -->
     </ui:define>
 </ui:composition>
 </html>
