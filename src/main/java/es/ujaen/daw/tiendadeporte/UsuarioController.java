@@ -13,11 +13,23 @@ import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletException;
 
 
 @Named(value = "ctrlUsuario")
 @ViewScoped
 public class UsuarioController implements Serializable {
+
+    @Inject HttpServletRequest request; //acceso al objeto request de la petición actual
+    //...
+    public String logout() throws ServletException {
+        request.logout();
+        request.getSession().invalidate();
+        return "/Index2?faces-redirect=true"; //PRG
+    }
+
+
     private static final long serialVersionUID = 1L;
     private final Logger logger = Logger.getLogger(UsuarioController.class.getName());
     @Inject  @DAOJpa

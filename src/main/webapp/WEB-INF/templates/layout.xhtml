@@ -10,7 +10,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
       xmlns:f="jakarta.faces.core"
-      xmlns:ui="jakarta.faces.facelets">
+      xmlns:ui="jakarta.faces.facelets"
+      xmlns:c="jakarta.tags.core">
 
 <h:head>
     <title>SportShop</title>
@@ -41,6 +42,11 @@
                 <h:link outcome="/administrador/enlaceInicioSesion" class="iniciar">Inicio Sesion</h:link>
                 <h:link outcome="/SobreNosotros" class="iniciar">Sobre Nosotros</h:link>
                 <h:link outcome="/Contacto" class="iniciar">Contacto</h:link>
+                <c:if test="#{not empty request.remoteUser}">
+                    <h:form>
+                        <h:commandButton action="#{ctrlUsuario.logout}" value="Logout #{request.remoteUser}" />
+                    </h:form>
+                </c:if>
             </div>
         </nav>
 
