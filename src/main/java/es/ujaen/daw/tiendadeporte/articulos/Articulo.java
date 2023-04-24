@@ -1,10 +1,9 @@
-package es.ujaen.daw.tiendadeporte;
+package es.ujaen.daw.tiendadeporte.articulos;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import java.io.Serializable;
 

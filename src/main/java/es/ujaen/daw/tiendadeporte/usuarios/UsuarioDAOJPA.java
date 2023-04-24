@@ -1,4 +1,4 @@
-package es.ujaen.daw.tiendadeporte;
+package es.ujaen.daw.tiendadeporte.usuarios;
 
 import es.ujaen.daw.tiendadeporte.DAOJpa;
 

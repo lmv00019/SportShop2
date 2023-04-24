@@ -1,9 +1,7 @@
-package es.ujaen.daw.tiendadeporte;
+package es.ujaen.daw.tiendadeporte.usuarios;
 
-import es.ujaen.daw.tiendadeporte.Usuario;
-import es.ujaen.daw.tiendadeporte.UsuarioDAO;
 import es.ujaen.daw.tiendadeporte.DAOJpa;
-import es.ujaen.daw.tiendadeporte.DAOMap;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Logger;

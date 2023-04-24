@@ -1,9 +1,7 @@
-package es.ujaen.daw.tiendadeporte;
+package es.ujaen.daw.tiendadeporte.articulos;
 
-import es.ujaen.daw.tiendadeporte.Articulo;
-import es.ujaen.daw.tiendadeporte.ArticuloDAO;
-import es.ujaen.daw.tiendadeporte.DAOJpa;
-import es.ujaen.daw.tiendadeporte.DAOMap;
+import es.ujaen.daw.tiendadeporte.Preferencias;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Logger;
@@ -18,7 +16,8 @@ import jakarta.inject.Named;
 @Named(value = "ctrlArticulo")
 @ViewScoped
 public class ArticuloController implements Serializable {
-    @Inject Preferencias preferencias;
+    @Inject
+    Preferencias preferencias;
     private static final long serialVersionUID = 1L;
     private final Logger logger = Logger.getLogger(ArticuloController.class.getName());
    // @Inject  @DAOMap
