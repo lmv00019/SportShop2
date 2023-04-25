@@ -42,7 +42,7 @@ public class SportidentityStore implements IdentityStore {
         String password = usernamePasswordCredential.getPasswordAsString();
 
         //Ejemplo simple de verificación de credenciales
-        //String validPassword = credenciales.get(username);
+        String validPassword = credenciales.get(username);
 
         if (validPassword != null && validPassword.equals(password)) {
 

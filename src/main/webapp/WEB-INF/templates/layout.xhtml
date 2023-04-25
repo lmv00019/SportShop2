@@ -48,11 +48,7 @@
                         <h:commandLink styleClass="text-center7 initialism"  action="#{ctrlUsuario.logout}" value="Logout" />
                     </h:form>
                 </c:if>
-                <c:if test="#{not empty prefs.administrador}">
-                    <h:form>
-                        <h:commandLink styleClass="text-center7 initialism"  action="#{ctrlUsuario.logout()}" value="Logout" />
-                    </h:form>
-                </c:if>
+
             </div>
         </nav>
 
@@ -81,6 +77,11 @@
         <div>
             <br/>
             <div class="container"><p class="m-0 text-center text-white"><h:link outcome="/Contacto"  style="color: white" >Más información</h:link></p></div>
+        </div>
+        <div>
+            <c:if test="#{not empty prefs.usuario}">
+                <hr/> <p>Informacion del usuario: #{prefs.usuario}</p>
+            </c:if>
         </div>
     </footer>
 </h:body>

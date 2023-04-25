@@ -1,10 +1,13 @@
 package es.ujaen.daw.tiendadeporte.usuarios;
 
 import es.ujaen.daw.tiendadeporte.DAOJpa;
+import es.ujaen.daw.tiendadeporte.usuarios.Usuario;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Logger;
+
+import es.ujaen.daw.tiendadeporte.Preferencias;
 import jakarta.annotation.PostConstruct;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
@@ -18,6 +21,9 @@ import jakarta.servlet.ServletException;
 @Named(value = "ctrlUsuario")
 @ViewScoped
 public class UsuarioController implements Serializable {
+
+    @Inject
+    Preferencias preferencias;
 
     @Inject HttpServletRequest request; //acceso al objeto request de la petición actual
     //...
@@ -50,6 +56,8 @@ public class UsuarioController implements Serializable {
 
     public void recupera() {
         usuario = usuarioDAO.buscaId(usuario.getId());
+        //preferencias.setUsuario(usuario.getUsuario());
+
         if (usuario == null) {
             fc.addMessage(null, new FacesMessage("El usuario indicado no existe"));
         }
