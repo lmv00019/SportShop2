@@ -1,6 +1,7 @@
 package es.ujaen.daw.tiendadeporte;
 
 
+import es.ujaen.daw.tiendadeporte.usuarios.Usuario;
 import jakarta.enterprise.context.SessionScoped;
         import jakarta.inject.Named;
         import java.io.Serializable;
@@ -8,16 +9,17 @@ import jakarta.enterprise.context.SessionScoped;
 @Named(value="prefs")
 @SessionScoped
 public class Preferencias implements Serializable {
-
-    private String ultimoArticulo = "";
+    private Usuario usuario;
 
     public Preferencias() {};
 
-    public String getUltimoArticulo(){
-        return ultimoArticulo;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setUltimoArticulo(String ultimoArticulo) {
-        this.ultimoArticulo = ultimoArticulo;
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
+
 }

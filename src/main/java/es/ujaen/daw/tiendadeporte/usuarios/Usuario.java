@@ -21,6 +21,8 @@ public class Usuario implements Serializable {
     @Pattern(regexp = "\\d{7,8}(-?[a-zA-Z])?", message = "El D.N.I debe tener 9 digitos y unaa letra en mayus o minus")
     private String dni;
 
+    private boolean administrador;
+
 
 
 
@@ -28,13 +30,15 @@ public class Usuario implements Serializable {
         id = 0;
         nombre = "";
         dni="";
+        administrador=false;
 
     }
 
-    public Usuario(Integer id, String nombre, String dni) {
+    public Usuario(Integer id, String nombre, String dni, boolean administrador) {
         this.id = id;
         this.nombre = nombre;
         this.dni = dni;
+        this.administrador = administrador;
 
     }
 
@@ -45,6 +49,7 @@ public class Usuario implements Serializable {
         this.id = u.id;
         this.nombre = u.nombre;
         this.dni = u.dni;
+        this.administrador = u.administrador;
 
     }
 
@@ -90,6 +95,19 @@ public class Usuario implements Serializable {
         this.dni = dni;
     }
 
+    /**
+     * @return the administrador
+     */
+    public boolean getAdministrador() {
+        return administrador;
+    }
+
+    /**
+     * @param administrador the administrador to set
+     */
+    public void setAdministrador(boolean administrador) {
+        this.administrador = administrador;
+    }
 
 
 

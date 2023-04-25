@@ -8,12 +8,12 @@ import jakarta.security.enterprise.authentication.mechanism.http.BasicAuthentica
 import jakarta.security.enterprise.authentication.mechanism.http.FormAuthenticationMechanismDefinition;
 import jakarta.security.enterprise.authentication.mechanism.http.LoginToContinue;
 
-
+/*
 @EmbeddedIdentityStoreDefinition({
         @Credentials(callerName = "admin", password = "secret1", groups = {"ADMINISTRADORES"}),
         @Credentials(callerName = "user", password = "secret2", groups = {"USUARIOS"})
 
-})
+})*/
 
 @FormAuthenticationMechanismDefinition(
         loginToContinue = @LoginToContinue(

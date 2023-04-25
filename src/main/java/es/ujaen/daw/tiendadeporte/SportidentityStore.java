@@ -1,5 +1,7 @@
 package es.ujaen.daw.tiendadeporte;
 import java.util.Set;
+
+import es.ujaen.daw.tiendadeporte.usuarios.UsuarioDAO;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.security.enterprise.credential.UsernamePasswordCredential;
@@ -15,6 +17,13 @@ import java.util.HashSet;
 @ApplicationScoped
 public class SportidentityStore implements IdentityStore {
     private static final Logger logger = Logger.getLogger(SportidentityStore.class.getName());
+
+    @Inject @DAOJpa
+    private UsuarioDAO usuarioDAO;
+
+    //@Inject Preferencias preferencias;
+
+
 
     private Map<String,String> credenciales; //ejemplo de almacén de credenciales
     public SportidentityStore() {
@@ -33,7 +42,7 @@ public class SportidentityStore implements IdentityStore {
         String password = usernamePasswordCredential.getPasswordAsString();
 
         //Ejemplo simple de verificación de credenciales
-        String validPassword = credenciales.get(username);
+        //String validPassword = credenciales.get(username);
 
         if (validPassword != null && validPassword.equals(password)) {
 

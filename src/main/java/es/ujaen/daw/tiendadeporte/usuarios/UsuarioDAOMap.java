@@ -18,9 +18,9 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
     public UsuarioDAOMap() {
         usuarios = new HashMap<>();
 
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "Paco López", "11111111-A"));
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "María Jiménez", "22222222-B"));
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "Carlos García", "33333333-C"));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "Paco López", "11111111-A",false));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "María Jiménez", "22222222-B",false));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "Carlos García", "33333333-C",false));
     }
 
     @Override

@@ -48,6 +48,11 @@
                         <h:commandLink styleClass="text-center7 initialism"  action="#{ctrlUsuario.logout}" value="Logout" />
                     </h:form>
                 </c:if>
+                <c:if test="#{not empty prefs.administrador}">
+                    <h:form>
+                        <h:commandLink styleClass="text-center7 initialism"  action="#{ctrlUsuario.logout()}" value="Logout" />
+                    </h:form>
+                </c:if>
             </div>
         </nav>
 

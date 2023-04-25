@@ -40,14 +40,14 @@ public class ArticuloController implements Serializable {
 
     public void recupera() {
         articulo = articuloDAO.buscaId(articulo.getId());
-        preferencias.setUltimoArticulo(articulo.getNombre());
+        //preferencias.setUltimoArticulo(articulo.getNombre());
         if (articulo == null) {
             fc.addMessage(null, new FacesMessage("El articulo indicado no existe"));
         }
     }
 
     public void recupera(Integer id) {
-        preferencias.setUltimoArticulo(articulo.getNombre());
+        //preferencias.setUltimoArticulo(articulo.getNombre());
     }
 
     public String crea() {
