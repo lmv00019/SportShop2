@@ -19,8 +19,8 @@ public class SportidentityStore implements IdentityStore {
     private Map<String,String> credenciales; //ejemplo de almacén de credenciales
     public SportidentityStore() {
         credenciales = new HashMap<>();
-        credenciales.put("usuario1", "clave1");
-        credenciales.put("usuario2", "clave2");
+        credenciales.put("Lorena", "clave1");
+        credenciales.put("Alberto", "clave2");
     }
 
 
@@ -38,7 +38,7 @@ public class SportidentityStore implements IdentityStore {
         if (validPassword != null && validPassword.equals(password)) {
 
         //Autenticación completada, obtener los roles del usuario...
-            Set<String> roles = new HashSet<>(Arrays.asList("USUARIOS"));
+            Set<String> roles = new HashSet<>(Arrays.asList("ADMINISTRADORES"));
         //Pasar datos del usuario al servidor
             return new CredentialValidationResult(username, roles);
         }
