@@ -61,4 +61,17 @@ Lorena:
 - acceso a informacion en el contexto de sesion
 - autentificacion mediante formulario
 - clases articulos
- 
+
+
+ITERACIÓN 4: 24 abril 2023 - 28 abril 2023
+
+Alberto:
+-Inserción de carpetas para agrupar
+-Gestion de sesion
+-Autentificacion basica
+
+Lorena:
+-Creacion de Usuario en identitystore
+-Cambio de roles
+-control de acceso a recursos
+-Formulario de autenticacion
