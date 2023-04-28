@@ -56,7 +56,7 @@ public class UsuarioController implements Serializable {
 
     public void recupera() {
         usuario = usuarioDAO.buscaId(usuario.getId());
-        //preferencias.setUsuario(usuario.getId());
+        //preferencias.setUsuario(usuario);
 
         if (usuario == null) {
             fc.addMessage(null, new FacesMessage("El usuario indicado no existe"));

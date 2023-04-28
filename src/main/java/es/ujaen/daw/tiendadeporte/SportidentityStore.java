@@ -1,6 +1,7 @@
 package es.ujaen.daw.tiendadeporte;
 import java.util.Set;
 
+import es.ujaen.daw.tiendadeporte.usuarios.Usuario;
 import es.ujaen.daw.tiendadeporte.usuarios.UsuarioDAO;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -21,15 +22,12 @@ public class SportidentityStore implements IdentityStore {
     @Inject @DAOJpa
     private UsuarioDAO usuarioDAO;
 
-    //@Inject Preferencias preferencias;
+    @Inject Preferencias preferencias;
 
 
 
-    private Map<String,String> credenciales; //ejemplo de almacén de credenciales
     public SportidentityStore() {
-        credenciales = new HashMap<>();
-        credenciales.put("Lorena", "clave1");
-        credenciales.put("Alberto", "clave2");
+
     }
 
 
@@ -42,12 +40,18 @@ public class SportidentityStore implements IdentityStore {
         String password = usernamePasswordCredential.getPasswordAsString();
 
         //Ejemplo simple de verificación de credenciales
-        String validPassword = credenciales.get(username);
-
-        if (validPassword != null && validPassword.equals(password)) {
-
+        Usuario usuario= usuarioDAO.buscaDni(username);
+//todo buscar en DAO por e-mail
+        if (usuario != null && usuario.getDni().equals(password)) {
+//todo obtener clave del usuario (comparar) NO DNI
+            preferencias.setUsuario(usuario);
         //Autenticación completada, obtener los roles del usuario...
-            Set<String> roles = new HashSet<>(Arrays.asList("ADMINISTRADORES"));
+            String rol="USUARIOS";
+            if(usuario.getAdministrador()==true){
+                rol="ADMINISTRADORES";
+            }
+
+            Set<String> roles = new HashSet<>(Arrays.asList(rol));
         //Pasar datos del usuario al servidor
             return new CredentialValidationResult(username, roles);
         }
