@@ -42,7 +42,7 @@ public class SportidentityStore implements IdentityStore {
         //Ejemplo simple de verificación de credenciales
         Usuario usuario= usuarioDAO.buscaDni(username);
 
-        if (usuario != null && usuario.getNombre().equals(password)) {
+        if (usuario != null && usuario.getemail().equals(password)) {
 //todo obtener clave del usuario (comparar) NO DNI
             preferencias.setUsuario(usuario);
         //Autenticación completada, obtener los roles del usuario...
