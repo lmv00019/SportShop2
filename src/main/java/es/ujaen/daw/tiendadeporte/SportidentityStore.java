@@ -45,7 +45,7 @@ public class SportidentityStore implements IdentityStore {
         Usuario usuario= usuarioDAO.buscaEmail(username);
 
         if (usuario != null && usuario.getEmail().equals(password)) {
-//todo obtener clave del usuario (comparar) NO DNI
+//todo obtener clave del usuario (comparar) NO DNIS
             preferencias.setUsuario(usuario);
         //Autenticación completada, obtener los roles del usuario...
             String rol="USUARIOS";
