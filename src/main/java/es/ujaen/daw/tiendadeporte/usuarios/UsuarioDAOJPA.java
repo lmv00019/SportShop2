@@ -68,6 +68,18 @@ public class UsuarioDAOJPA implements UsuarioDAO, Serializable {
         return u;
     }
 
+    public Usuario buscaEmail(String email) {
+        Usuario u = null;
+        try {
+            TypedQuery<Usuario> q = em.createQuery("Select u from Usuario u where u.email=:email",Usuario.class);
+            q.setParameter("email", email);
+            u = q.getSingleResult();
+        } catch (Exception ex) {
+            logger.log(Level.SEVERE, ex.getMessage(), ex);
+        }
+        return u;
+    }
+
     /** Sample nativeQuery method*/
     public List<String> buscaDnis() {
         List<String> l = new ArrayList<>();

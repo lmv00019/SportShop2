@@ -1,2 +1,2 @@
-insert into USUARIO (id,nombre,dni,administrador) values (15, 'fernando estasion fren','25643789G', true)
+insert into USUARIO (id,nombre,dni,administrador,email) values (15, 'fernando estasion fren','25643789G', true,'fernando16@gmail.com')
 insert into ARTICULO (id,nombre,categoria,precio,unidades,imagen,talla,visualiza) values (1, 'Camiseta roja','Camiseta',10,1,'/imagenes/camisetas.jpg','s','Atendido por Alberto')

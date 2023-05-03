@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 import java.util.HashSet;
+//import jakarta.faces.context.ExternalContext console;
 
 @ApplicationScoped
 public class SportidentityStore implements IdentityStore {
@@ -36,13 +37,14 @@ public class SportidentityStore implements IdentityStore {
 
         //Recuperar credenciales proporcionadas por el servidor
         String username = usernamePasswordCredential.getCaller();
+        //console.log(username);
 
         String password = usernamePasswordCredential.getPasswordAsString();
 
         //Ejemplo simple de verificación de credenciales
-        Usuario usuario= usuarioDAO.buscaDni(username);
+        Usuario usuario= usuarioDAO.buscaEmail(username);
 
-        if (usuario != null && usuario.getemail().equals(password)) {
+        if (usuario != null && usuario.getEmail().equals(password)) {
 //todo obtener clave del usuario (comparar) NO DNI
             preferencias.setUsuario(usuario);
         //Autenticación completada, obtener los roles del usuario...

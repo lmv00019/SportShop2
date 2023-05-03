@@ -12,8 +12,9 @@ import jakarta.validation.constraints.Size;
 //@Table(name="Usuario")
 public class Usuario implements Serializable {
 
-    @Id         //JPA annotations
+           //JPA annotations
     //@GeneratedValue(strategy = GenerationType.IDENTITY) //Auto-incremental
+
     private Integer id;
 
     @Size(min = 4, max = 25, message = "La longitud ${validatedValue} debe estar entre {min} y {max} caracteres")
@@ -22,6 +23,9 @@ public class Usuario implements Serializable {
     private String dni;
 
     private boolean administrador;
+
+    @Id
+    private String email;
 
 
 
@@ -32,14 +36,16 @@ public class Usuario implements Serializable {
         nombre = "";
         dni="";
         administrador=false;
+        email="";
 
     }
 
-    public Usuario(Integer id, String nombre, String dni, boolean administrador) {
+    public Usuario(Integer id, String nombre, String dni, boolean administrador, String email) {
         this.id = id;
         this.nombre = nombre;
         this.dni = dni;
         this.administrador = administrador;
+        this.email = email;
 
     }
 
@@ -51,6 +57,7 @@ public class Usuario implements Serializable {
         this.nombre = u.nombre;
         this.dni = u.dni;
         this.administrador = u.administrador;
+        this.email = u.email;
 
     }
 
@@ -109,6 +116,20 @@ public class Usuario implements Serializable {
      */
     public void setAdministrador(boolean administrador) {
         this.administrador = administrador;
+    }
+
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 

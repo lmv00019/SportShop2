@@ -18,9 +18,9 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
     public UsuarioDAOMap() {
         usuarios = new HashMap<>();
 
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "Paco López", "11111111-A",false));
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "María Jiménez", "22222222-B",false));
-        usuarios.put(idUsuario, new Usuario(idUsuario++, "Carlos García", "33333333-C",false));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "Paco López", "11111111-A",false,"email1"));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "María Jiménez", "22222222-B",false,"email2"));
+        usuarios.put(idUsuario, new Usuario(idUsuario++, "Carlos García", "33333333-C",false,"email3"));
     }
 
     @Override
@@ -76,6 +76,20 @@ public class UsuarioDAOMap implements UsuarioDAO, Serializable{
         Usuario localizado = null;
         for (Usuario u: usuarios.values()) {
             if (u.getDni().equals(dni)) {
+                localizado=u;
+                break;
+            }
+        }
+        if (localizado!=null) localizado=new Usuario(localizado);
+        return localizado;
+    }
+
+    @Override
+    public Usuario buscaEmail(String email) {
+        //return clientes.values().stream().filter( c -> c.getDni().equals(nif)).findAny().orElse(null);
+        Usuario localizado = null;
+        for (Usuario u: usuarios.values()) {
+            if (u.getEmail().equals(email)) {
                 localizado=u;
                 break;
             }
