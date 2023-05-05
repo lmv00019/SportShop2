@@ -70,6 +70,14 @@ public class UsuarioController implements Serializable {
         return "/Index2?faces-redirect=true&id" + usuario.getId();
     }
 
+    public String registro() {
+        usuario.setId(0);
+        usuario.setAdministrador(false);
+        usuarioDAO.crea(usuario);
+        //Post-Redirect-Get
+        return "/Index2?faces-redirect";
+    }
+
     public String guarda() {
         usuarioDAO.guarda(usuario);
         return "/Index2?faces-redirect=true&id=" + usuario.getId();

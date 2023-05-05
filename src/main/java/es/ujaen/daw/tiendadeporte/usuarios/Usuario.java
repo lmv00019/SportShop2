@@ -27,6 +27,8 @@ public class Usuario implements Serializable {
     @Id
     private String email;
 
+    private String clave;
+
 
 
 
@@ -155,6 +157,13 @@ public class Usuario implements Serializable {
         return "Usuario[ id=" + id +"]";
 }
 
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
 }
 
 
