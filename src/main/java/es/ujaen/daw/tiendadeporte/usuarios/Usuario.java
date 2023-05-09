@@ -39,15 +39,17 @@ public class Usuario implements Serializable {
         dni="";
         administrador=false;
         email="";
+        clave="";
 
     }
 
-    public Usuario(Integer id, String nombre, String dni, boolean administrador, String email) {
+    public Usuario(Integer id, String nombre, String dni, boolean administrador, String email, String clave) {
         this.id = id;
         this.nombre = nombre;
         this.dni = dni;
         this.administrador = administrador;
         this.email = email;
+        this.clave= clave;
 
     }
 
@@ -60,6 +62,7 @@ public class Usuario implements Serializable {
         this.dni = u.dni;
         this.administrador = u.administrador;
         this.email = u.email;
+        this.clave= u.clave;
 
     }
 
