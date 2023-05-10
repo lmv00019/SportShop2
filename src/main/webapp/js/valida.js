@@ -10,7 +10,7 @@ class valida {
             idni:"[name=dni]",
             btDNI:"#btDNI",
             salida:"#mensaje",
-            ERdni:/^\d{7,8}(-?[a-zA-Z])?$/i,
+            ERdni:/^(\d{8})([a-zA-Z])$/
         };
         console.log("Controlador inicializado");
     }
