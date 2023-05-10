@@ -18,6 +18,7 @@
 
     <ui:define name="contenido">
 
+
         <div class="formulario">
             <h1>Identificacion de usuario</h1>
             <c:if test="#{param.error!=null}">
@@ -41,19 +42,6 @@
         </div>
 
 
-
-        <!--
-        <h2>Identificación de usuario </h2>
-        <c:if test="#{param.error!=null}">
-            <p class="alert alert-danger">Error de autenticación</p>
-        </c:if>
-        <form action="j_security_check" method="POST">
-            <label>Usuario</label><input type="text" name="j_username"/>
-            <label>Clave</label><input type="password" name="j_password"/>
-            <input type="submit" value="Acceder"/>
-        </form>
-        <br/>
-        -->
     </ui:define>
 </ui:composition>
 </html>
