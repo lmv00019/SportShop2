@@ -42,10 +42,14 @@
             </div>
             <br></br>
             <div>
-                <h:link outcome="/administrador/enlaceInicioSesion" class="iniciar">Inicio Sesion</h:link>
+                <h:link outcome="/inicio" class="iniciar">Inicio Sesion</h:link>
                 <h:link outcome="/SobreNosotros" class="iniciar">Sobre Nosotros</h:link>
                 <h:link outcome="/Contacto" class="iniciar">Contacto</h:link>
+                <c:if test="#{request.isUserInRole('ADMINISTRADORES')}">
+                    <h:link outcome="/administrador/enlaceInicioSesion" class="iniciar">Administración</h:link>
 
+
+                </c:if>
                 <c:if test="#{not empty request.remoteUser}">
                     <h:form>
                         <h:commandLink styleClass="text-center7 initialism"  action="#{ctrlUsuario.logout}" value="Logout" />
