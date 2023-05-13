@@ -75,3 +75,20 @@ Lorena:
 -Cambio de roles
 -control de acceso a recursos
 -Formulario de autenticacion
+
+ITERACIÓN 5: 8 mayo 2023 - 13 mayo 2023
+
+Alberto:
+-Inserción de carpetas para agrupar
+- Arreglos en laGestion de sesion
+-Autentificacion basica
+-Vista intermediaria para usuarios no administradores
+- Boton de adminiastradores
+- Inclusion de API
+
+
+Lorena:
+-Validacion
+-Cambio de roles para la identificacion
+-control de acceso a recursos
+-Creacion de boton Administrador
